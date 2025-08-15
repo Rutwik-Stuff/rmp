@@ -53,4 +53,4 @@ Go subscribe to me on YouTube at @7zeb, or go to my website at https://7zeb.gith
 
 ## 📂 License
 
-None, you can use this how you want!
+None, you can use this how you want, just be sure to credit **7Zeb** in your README file.
