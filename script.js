@@ -25,6 +25,13 @@ function playTrack(index) {
     const url = URL.createObjectURL(file); //turns the file into a temporary URL that thr browser can play
     player.src = url; //sets the audio source to the URL that was just created
     player.play(); //starts playing audio
+
+    //highlight the track that is playing (added in v1.1.0)
+    const listItems = playlist.querySelectorAll('li'); 
+  listItems.forEach((item, i) => {
+    item.classList.toggle('active-track', i === index);
+  });
+
 }
 
 loopToggle.onclick = () => {
