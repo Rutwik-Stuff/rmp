@@ -20,8 +20,9 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 
 ## 🚧 What will be added soon
 
-- ❌ No "loop entire playlist" feature yet
-- 🎨 UI is unstyled and visually minimal
+- ➿ Loop Playlist
+- 🎨 A better UI
+- ℹ Menu bar so you can choose options
 
 ---
 
@@ -38,6 +39,7 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 ## 📜 Roadmap
 
 - **v1.2.0** — Add blue-green theme and basic styling
+- **v1.3.0** — Add Volume Controls
 
 
 ---
