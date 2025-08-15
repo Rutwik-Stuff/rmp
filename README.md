@@ -40,6 +40,7 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 
 - **v1.2.0** — Add blue-green theme and basic styling
 - **v1.3.0** — Add Volume Controls
+- **v1.4.0** — Add AVIF, and OGG Support.
 
 
 ---
