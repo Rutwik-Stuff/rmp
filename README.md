@@ -1,7 +1,7 @@
 # 🎧 Rutwik Media Player (rmp)
 
 **Release Date:** August 14, 2025  
-**Current Version:** v1.0.0
+**Current Version:** v1.1.0
 
 Rutwik Media Player is a lightweight, browser-based audio player designed for offline use. Built with pure HTML, JavaScript, and no external dependencies, it supports multiple audio formats and basic playback controls. This is the first official release—minimal UI, maximum function.
 
@@ -14,6 +14,7 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 - 🖱️ Click-to-play track selection from dynamic playlist
 - 🔁 Loop toggle for single-track repeat
 - ⌨️ Spacebar control for play/pause
+- 🖋 Current song playing highlighted in dark orange color
 
 ---
 
@@ -36,7 +37,6 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 
 ## 📜 Roadmap
 
-- **v1.1.0** — Highlight currently playing track
 - **v1.2.0** — Add blue-green theme and basic styling
 
 
