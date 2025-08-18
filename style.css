@@ -1,4 +1,67 @@
+/* The RMP CSS File   */
+
+
+/* Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'sans-serif';
+    background: linear-gradient(135deg, #00bfff, #00bff2);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Playlist Container */
+/* This will be what the playlist is held in */
+#playlists {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 300px;
+}
+
+#playlists li {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(8px); /*for blur effect*/
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#playlists li :hover {
+    background: rgba(255,255,255, 0.2);
+}
+
 .active-track {
-    background-color: darkorange;
+    border: 2px solid #00ffb2;
     font-weight: bold;
+}
+
+/* Glass button that looks a lot like Windows Aero */
+button, #loopToggle {
+    background: rgba(255,255,255, 0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0,255,178,0.4);
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+button:hover, #loopToggle:hover {
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+
+/* Audio Player */
+#player {
+    width: 300px;
+    margin-top: 20px;
 }
