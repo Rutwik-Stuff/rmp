@@ -15,8 +15,6 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 - 🔁 Loop toggle for single-track repeat
 - ⌨️ Spacebar control for play/pause
 - 🖋 Current song playing highlighted in blueish green border.
-- 🌐 An online version hosted on Github Pages!
-
 ---
 
 ## 🚧 What will be added soon
