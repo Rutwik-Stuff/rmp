@@ -1,8 +1,9 @@
-//global
+//Global Variables
 const upload = document.getElementById('upload');
 const playlist = document.getElementById('playlists');
 const player = document.getElementById('player');
 const loopToggle = document.getElementById('loopToggle');
+
 
 let tracks = []; // Declare globally so playTrack() can access it
 
@@ -38,12 +39,3 @@ loopToggle.onclick = () => {
     player.loop = !player.loop; //flips the loop from off to on
     loopToggle.textContent = `Loop: ${player.loop ? 'On' : 'Off'}`; //current loop status button
 };
-
-document.addEventListener('keydown', (event) => { //listens for keys on the page
-    if (event.code === 'Space') { //if the spacebar is pressed do the following
-        event.preventDefault(); //stops the browser from scrolling down (defualt action for the browser)
-        player.paused ? player.play() : player.pause(); //actually pauses the music
-    }
-});
-
-console.log("JavaScript is present!");
