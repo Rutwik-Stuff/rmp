@@ -9,7 +9,7 @@ Rutwik Media Player is a lightweight, browser-based audio player designed for of
 
 ## ✨ Features
 
-- ✅ Local audio playback (MP3, M4A, OPUS)
+- ✅ Local audio playback (MP3, M4A, OPUS, AVIF)
 - 📁 Upload multiple files at once
 - 🖱️ Click-to-play track selection from dynamic playlist
 - 🔁 Loop toggle for single-track repeat
