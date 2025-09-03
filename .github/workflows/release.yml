@@ -1,0 +1,32 @@
+name: Zip & Pre-release
+
+on:
+  push:
+    tags:
+      - 'v*'   # Triggers on version tags, e.g. v1.4.0
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Placeholder build step (does nothing for now)
+      - name: (Optional) Build step
+        run: echo "No build step yet - just zipping source."
+
+      # Zip the entire repository (change to a subfolder if needed later)
+      - name: Create ZIP archive
+        run: zip -r release.zip . -x ".git/*" ".github/*"
+
+      - name: Create Pre-release and Upload ZIP
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          prerelease: true
+          files: release.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
