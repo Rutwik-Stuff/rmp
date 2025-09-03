@@ -1,9 +1,9 @@
-name: Zip & Pre-release
+name: Auto Release on Commit
 
 on:
   push:
-    tags:
-      - 'v*'   # Triggers on version tags, e.g. v1.4.0
+    branches:
+      - main    # Change this if your default branch is not 'main'
 
 jobs:
   build-release:
@@ -13,19 +13,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Placeholder build step (does nothing for now)
+      # Optional build step - replace/add actual build steps if needed
       - name: (Optional) Build step
         run: echo "No build step yet - just zipping source."
 
-      # Zip the entire repository (change to a subfolder if needed later)
+      # Zip the entire repository (excluding .git and workflow files)
       - name: Create ZIP archive
         run: zip -r release.zip . -x ".git/*" ".github/*"
 
+      # Create a Pre-release with a unique name each commit
       - name: Create Pre-release and Upload ZIP
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
+          tag_name: commit-${{ github.sha }}
+          name: Commit Release ${{ github.sha }}
           prerelease: true
           files: release.zip
         env:
